@@ -11,7 +11,10 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ['https://quiz-game-k2pj.onrender.com', 'https://quiz-game-coral-eight.vercel.app/'] // Allow requests from both URLs
+    origin: ['https://quiz-game-k2pj.onrender.com', 'https://quiz-game-coral-eight.vercel.app'],
+    methods: ['GET', 'POST', 'OPTIONS'], // Specify allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+    credentials: true // Allow credentials if needed
 }));
 
 
