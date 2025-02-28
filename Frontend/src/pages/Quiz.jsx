@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 const GET_QUIZ_QUESTIONS = gql`
   query {
-    getQuizQuestions {
-      id
-      question
-      options
-      answer
-    }
+  getQuizQuestions {
+    id
+    question
+    options
+    answer
   }
-`;
+}`
+  
 
 const Quiz = () => {
   const { loading, error, data } = useQuery(GET_QUIZ_QUESTIONS);
