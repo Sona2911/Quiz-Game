@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ['https://quiz-game-ykwz.onrender.com', 'https://quiz-game-six-gilt.vercel.app'] // Allow requests from both URLs
+    origin: ['https://quiz-game-k2pj.onrender.com', 'https://quiz-game-coral-eight.vercel.app/'] // Allow requests from both URLs
 }));
 
 
